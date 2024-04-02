@@ -47,7 +47,7 @@ devDependencies:
     specifier: 14.1.0
     version: 14.1.0(eslint@8.57.0)(typescript@5.4.3)
   postcss:
-    specifier: ^8
+    specifier: ^8.4.38
     version: 8.4.38
   prettier:
     specifier: ^3.2.5
