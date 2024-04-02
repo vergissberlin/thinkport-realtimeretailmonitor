@@ -364,7 +364,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                             </Link>
                           </li>
 
-
                           <li>
                             <Link
                               href="/ui/alerts" title=' Informationen über den Verkaufserfolg in verschiedenen Standorten oder Filialen, um Standortentscheidungen zu optimieren.'
