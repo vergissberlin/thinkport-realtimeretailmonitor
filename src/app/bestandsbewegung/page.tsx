@@ -6,8 +6,7 @@ import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Bestandsbewegung",
-  description:
-    "Realtime Retail Monitor Proof of Concept",
+  description: "Realtime Retail Monitor Proof of Concept",
 };
 
 const BestandsbewegungPage: React.FC = () => {
