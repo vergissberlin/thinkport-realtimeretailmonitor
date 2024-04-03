@@ -67,7 +67,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
     >
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-        <Link href="/" className='text-xl font-light text-white  w-100 items-center flex flex-col gap-3'>
+        <Link
+          href="/"
+          className="flex w-100 flex-col  items-center gap-3 text-xl font-light text-white"
+        >
           <Image
             width={176}
             height={32}
@@ -205,7 +208,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               </SidebarLinkGroup>
               {/* <!-- Menu Item Dashboard --> */}
 
-
               {/* <!-- Menu Item Lagerbestandsverfolgung --> */}
               <li>
                 <Link
@@ -274,7 +276,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <polygon points="5 9 9 5 13 9" />
-                    <polygon points="5 13 9 17 13 13"/>
+                    <polygon points="5 13 9 17 13 13" />
                   </svg>
                   Preisveränderungen
                 </Link>
@@ -298,7 +300,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M9 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm3 8H6v-2h6v2zm0-3H6V7h6v5z"/>
+                    <path d="M9 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm3 8H6v-2h6v2zm0-3H6V7h6v5z" />
                   </svg>
                   Bestandsbewegung
                 </Link>
@@ -322,28 +324,23 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M9 11.75c-2.5 0-4.5-2-4.5-4.5S6.5 3 9 3s4.5 2 4.5 4.5-2 4.5-4.5 4.5zm0-7c-1.38 0-2.5 1.12-2.5 2.5S7.62 9.75 9 9.75s2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z"/>
-                    <line x1="9" y1="13" x2="9" y2="18"/>
+                    <path d="M9 11.75c-2.5 0-4.5-2-4.5-4.5S6.5 3 9 3s4.5 2 4.5 4.5-2 4.5-4.5 4.5zm0-7c-1.38 0-2.5 1.12-2.5 2.5S7.62 9.75 9 9.75s2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5z" />
+                    <line x1="9" y1="13" x2="9" y2="18" />
                   </svg>
                   Standortanalysen
                 </Link>
               </li>
               {/* <!-- Menu Item Standortanalysen --> */}
-
-
-
             </ul>
           </div>
 
           {/* <!-- Others Group --> */}
           <div>
             <h3 className="mb-4 ml-4 text-sm font-semibold text-bodydark2">
-            SONSTIGES
+              SONSTIGES
             </h3>
 
             <ul className="mb-6 flex flex-col gap-1.5">
-
-
               {/* <!-- Menu Item Calendar --> */}
               <li>
                 <Link
@@ -370,7 +367,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 </Link>
               </li>
               {/* <!-- Menu Item Calendar --> */}
-
 
               {/* <!-- Retail Monitor --> */}
               <SidebarLinkGroup
@@ -451,10 +447,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         }`}
                       >
                         <ul className="mb-5.5 mt-4 flex flex-col gap-2.5 pl-6">
-
-                        <li>
+                          <li>
                             <Link
-                              href="/ui/alerts" title="Echtzeitinformationen über den aktuellen Lagerbestand von Produkten in verschiedenen Filialen oder Lagern."
+                              href="/ui/alerts"
+                              title="Echtzeitinformationen über den aktuellen Lagerbestand von Produkten in verschiedenen Filialen oder Lagern."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
                                 pathname === "/ui/alerts" && "text-white"
                               }`}
@@ -463,11 +459,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                             </Link>
                           </li>
 
-
-
                           <li>
                             <Link
-                              href="/ui/alerts" title="Daten zu aktuellen Verkaufszahlen und Umsätzen in Echtzeit, einschließlich Umsatz nach Produkt, Standort, Zeitraum usw."
+                              href="/ui/alerts"
+                              title="Daten zu aktuellen Verkaufszahlen und Umsätzen in Echtzeit, einschließlich Umsatz nach Produkt, Standort, Zeitraum usw."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
                                 pathname === "/ui/alerts" && "text-white"
                               }`}
@@ -478,7 +473,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
                           <li>
                             <Link
-                              href="/ui/alerts" title='Aktualisierte Informationen über Preisanpassungen, Sonderangebote oder Rabatte in Echtzeit.'
+                              href="/ui/alerts"
+                              title="Aktualisierte Informationen über Preisanpassungen, Sonderangebote oder Rabatte in Echtzeit."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
                                 pathname === "/ui/alerts" && "text-white"
                               }`}
@@ -489,7 +485,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
                           <li>
                             <Link
-                              href="/ui/alerts" title='Vergleich der eigenen Leistung mit der der Wettbewerber, einschließlich Preise, Produktangebot und Verkaufstrends.'
+                              href="/ui/alerts"
+                              title="Vergleich der eigenen Leistung mit der der Wettbewerber, einschließlich Preise, Produktangebot und Verkaufstrends."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
                                 pathname === "/ui/alerts" && "text-white"
                               }`}
@@ -500,7 +497,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
                           <li>
                             <Link
-                              href="/ui/alerts" title='Verfolgung von Ein- und Ausgängen von Produkten im Lager oder in den Filialen in Echtzeit.'
+                              href="/ui/alerts"
+                              title="Verfolgung von Ein- und Ausgängen von Produkten im Lager oder in den Filialen in Echtzeit."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
                                 pathname === "/ui/alerts" && "text-white"
                               }`}
@@ -511,7 +509,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
                           <li>
                             <Link
-                              href="/ui/alerts" title='Integration von Wetterinformationen, um den Einfluss von Wetterbedingungen auf den Einzelhandelsumsatz zu verstehen.'
+                              href="/ui/alerts"
+                              title="Integration von Wetterinformationen, um den Einfluss von Wetterbedingungen auf den Einzelhandelsumsatz zu verstehen."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
                                 pathname === "/ui/alerts" && "text-white"
                               }`}
@@ -522,7 +521,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
                           <li>
                             <Link
-                              href="/ui/alerts" title='Informationen über den Verkaufserfolg in verschiedenen Standorten oder Filialen, um Standortentscheidungen zu optimieren.'
+                              href="/ui/alerts"
+                              title="Informationen über den Verkaufserfolg in verschiedenen Standorten oder Filialen, um Standortentscheidungen zu optimieren."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
                                 pathname === "/ui/alerts" && "text-white"
                               }`}
@@ -533,7 +533,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
                           <li>
                             <Link
-                              href="/ui/alerts" title=' Informationen über den Verkaufserfolg in verschiedenen Standorten oder Filialen, um Standortentscheidungen zu optimieren.'
+                              href="/ui/alerts"
+                              title=" Informationen über den Verkaufserfolg in verschiedenen Standorten oder Filialen, um Standortentscheidungen zu optimieren."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
                                 pathname === "/ui/alerts" && "text-white"
                               }`}
@@ -541,7 +542,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                               Prognosen und Trends
                             </Link>
                           </li>
-
                         </ul>
                       </div>
                       {/* <!-- Dropdown Menu End --> */}
@@ -550,7 +550,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                 }}
               </SidebarLinkGroup>
               {/* <!-- Retail Monitor --> */}
-
 
               {/* <!-- Menu Item Chart --> */}
               <li>
@@ -693,6 +692,28 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                               Buttons
                             </Link>
                           </li>
+
+                          <li>
+                            <Link
+                              href="/forms/form-elements"
+                              className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
+                                pathname === "/forms/form-elements" && "text-white"
+                              }`}
+                            >
+                              Form-Elements
+                            </Link>
+                          </li>
+
+                            <li>
+                                <Link
+                                href="/forms/form-layout"
+                                className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
+                                    pathname === "/forms/form-layout" && "text-white"
+                                }`}
+                                >
+                                Form-Layout
+                                </Link>
+                                </li>
                         </ul>
                       </div>
                       {/* <!-- Dropdown Menu End --> */}
