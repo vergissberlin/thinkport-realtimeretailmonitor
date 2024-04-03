@@ -16,6 +16,11 @@ if (isGithubActions) {
 const nextConfig = {
     assetPrefix: assetPrefix,
     basePath: basePath,
+    reactStrictMode: true,
+    images: {
+        loader: "akamai",
+        path: "/",
+    },
 }
 
 export default nextConfig
