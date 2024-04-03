@@ -69,7 +69,8 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         env:
-          NEXT_PUBLIC_BASE_PATH: ${{ env.NEXT_PUBLIC_BASE_PATH }}
+          NEXT_PUBLIC_BASE_PATH: /thinkport-realtimeretailmonitor
+          NEXT_ASSET_PREFIX: /thinkport-realtimeretailmonitor/
         with:
           path: |
             .next/cache
