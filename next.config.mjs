@@ -1,10 +1,21 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    reactStrictMode: true,
-  images: {
-    loader: "akamai",
-    path: "/",
-  },
-};
+const isGithubActions = process.env.GITHUB_ACTIONS || false
 
-export default nextConfig;
+let assetPrefix = ''
+let basePath = '/'
+
+if (isGithubActions) {
+    // trim off `<owner>/`
+    const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+
+    assetPrefix = `/${repo}/`
+    basePath = `/${repo}`
+}
+
+
+const nextConfig = {
+    assetPrefix: assetPrefix,
+    basePath: basePath,
+}
+
+export default nextConfig
