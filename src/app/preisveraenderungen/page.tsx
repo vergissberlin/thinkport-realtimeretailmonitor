@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "This is Next.js Chart page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
 };
 
-const PreisveränderungenPage: React.FC = () => {
+const PreisveraenderungenPage: React.FC = () => {
   return (
     <DefaultLayout>
       <Breadcrumb pageName="Preisveränderungen" />
@@ -27,4 +27,4 @@ const PreisveränderungenPage: React.FC = () => {
   );
 };
 
-export default PreisveränderungenPage;
+export default PreisveraenderungenPage;

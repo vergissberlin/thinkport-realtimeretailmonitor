@@ -235,9 +235,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Verkaufsanalysen --> */}
               <li>
                 <Link
-                  href="/calendar"
+                  href="/verkaufsanalysen"
                   className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("calendar") &&
+                    pathname.includes("verkaufsanalysen") &&
                     "bg-graydark dark:bg-meta-4"
                   }`}
                 >
@@ -261,9 +261,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Preisveränderungen --> */}
               <li>
                 <Link
-                  href="/calendar"
+                  href="/preisveraenderungen"
                   className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("calendar") &&
+                    pathname.includes("preisveraenderungen") &&
                     "bg-graydark dark:bg-meta-4"
                   }`}
                 >
@@ -286,9 +286,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Bestandsbewegung --> */}
               <li>
                 <Link
-                  href="/calendar"
+                  href="/bestandsbewegung"
                   className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("calendar") &&
+                    pathname.includes("bestandsbewegung") &&
                     "bg-graydark dark:bg-meta-4"
                   }`}
                 >
@@ -310,9 +310,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Standortanalysen --> */}
               <li>
                 <Link
-                  href="/calendar"
+                  href="/standortanalysen"
                   className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("calendar") &&
+                    pathname.includes("standortanalysen") &&
                     "bg-graydark dark:bg-meta-4"
                   }`}
                 >
@@ -449,10 +449,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         <ul className="mb-5.5 mt-4 flex flex-col gap-2.5 pl-6">
                           <li>
                             <Link
-                              href="/ui/alerts"
+                              href="/lagerbestandsverfolgung"
                               title="Echtzeitinformationen über den aktuellen Lagerbestand von Produkten in verschiedenen Filialen oder Lagern."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
-                                pathname === "/ui/alerts" && "text-white"
+                                pathname === "/lagerbestandsverfolgung" && "text-white"
                               }`}
                             >
                               Lagerbestandsverfolgung
@@ -461,10 +461,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
                           <li>
                             <Link
-                              href="/ui/alerts"
+                              href="/verkaufsanalysen"
                               title="Daten zu aktuellen Verkaufszahlen und Umsätzen in Echtzeit, einschließlich Umsatz nach Produkt, Standort, Zeitraum usw."
                               className={`group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white ${
-                                pathname === "/ui/alerts" && "text-white"
+                                pathname === "/verkaufsanalysen" && "text-white"
                               }`}
                             >
                               Verkaufsanalysen
