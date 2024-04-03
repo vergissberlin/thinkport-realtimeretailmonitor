@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
 export const metadata: Metadata = {
   title: "Verkaufsanalysen",
   description:
-    "This is Next.js Chart page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
+    "Realtime Retail Monitor Proof of Concept",
 };
 
 const VerkaufsanalysenPage: React.FC = () => {
