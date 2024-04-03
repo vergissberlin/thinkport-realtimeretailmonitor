@@ -9,7 +9,7 @@ const MapRegions: React.FC = () => {
     const mapRegions = new jsVectorMap({
       selector: "#mapRegions",
       map: "edeka",
-      zoomButtons: true,
+      zoomButtons: false,
       zoomOnScroll: false,
       markers: [
        
@@ -132,7 +132,7 @@ const MapRegions: React.FC = () => {
         selected: { fill: "gray" },
         selectedHover: { fill: "purple" },
       },
-      selectedRegions: ["EG", "US", "GB", "FR"],
+      selectedRegions: ["EDDI", "US", "GB", "FR"],
       regionsSelectable: true,
       regionLabelStyle: {
         initial: {
@@ -154,7 +154,7 @@ const MapRegions: React.FC = () => {
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-7">
       <h4 className="mb-2 text-xl font-semibold text-black dark:text-white">
-        Regionenübersicht
+        POS Deployment
       </h4>
       <div className="h-90">
         <div id="mapRegions" className="mapRegions map-btn"></div>
