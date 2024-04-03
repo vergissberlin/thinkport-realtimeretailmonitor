@@ -7,6 +7,7 @@ import ChatCard from "../Chat/ChatCard";
 import TableOne from "../Tables/TableOne";
 import CardDataStats from "../CardDataStats";
 import MapOne from "../Maps/MapOne";
+import MapRegions from "../Maps/MapRegions";
 
 const ECommerce: React.FC = () => {
   return (
@@ -103,6 +104,7 @@ const ECommerce: React.FC = () => {
         <ChartTwo />
         <ChartThree />
         <MapOne />
+        <MapRegions />
         <div className="col-span-12 xl:col-span-8">
           <TableOne />
         </div>
