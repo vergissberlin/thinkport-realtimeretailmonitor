@@ -68,9 +68,6 @@ jobs:
           static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v4
-        env:
-          NEXT_PUBLIC_BASE_PATH: /thinkport-realtimeretailmonitor
-          NEXT_ASSET_PREFIX: /thinkport-realtimeretailmonitor/
         with:
           path: |
             .next/cache

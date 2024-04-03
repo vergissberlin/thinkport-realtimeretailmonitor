@@ -12,7 +12,6 @@ const MapRegions: React.FC = () => {
       zoomButtons: false,
       zoomOnScroll: false,
       markers: [
-       
         {
           name: "EDDI",
           labelName: "EDDI",
