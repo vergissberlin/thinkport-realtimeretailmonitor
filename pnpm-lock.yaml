@@ -15,8 +15,8 @@ dependencies:
     specifier: ^4.6.13
     version: 4.6.13
   jsvectormap:
-    specifier: ^1.5.3
-    version: 1.5.3
+    specifier: ^1.6.0
+    version: 1.6.0
   next:
     specifier: 14.1.4
     version: 14.1.4(react-dom@18.2.0)(react@18.2.0)
@@ -2124,8 +2124,8 @@ packages:
       minimist: 1.2.8
     dev: true
 
-  /jsvectormap@1.5.3:
-    resolution: {integrity: sha512-HStTEhZEVr8t3t6juApO603nr1y54K/wjcdOvgGtvpE1etZ9Isg/sLdqh7OX4+RJ8srdP7WiBoTV/93aMqhLhw==}
+  /jsvectormap@1.6.0:
+    resolution: {integrity: sha512-4b/v4GWqiggHGN+CBOJBhIdpSGLY6wVetmMKiOlQ7oVM1PIzsLlSBJDMQd9ycLk6Rmzg4aFua35QDrk5HPb1YQ==}
     dev: false
 
   /jsx-ast-utils@3.3.5:
